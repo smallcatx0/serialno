@@ -1,0 +1,26 @@
+{
+  "base": {
+    "app_name": "serialno",
+    "describe" : "中央编码器",
+    "env": "dev",
+    "http_port": "80"
+  },
+  "redis": {
+    "open": false,
+    "addr": "redis-serv:6379",
+    "db": 1,
+    "pwd": "",
+    "pool_size": 30,
+    "max_reties": 3,
+    "idle_timeout": 1000,
+    "key_prefix": "serialno"
+  },
+  "log": {
+    "type": "file",
+    "path": "./logs/sn.log",
+    "level": "INFO",
+    "max_size": 32,
+    "max_age": 30,
+    "max_backups": 300
+  }
+}
